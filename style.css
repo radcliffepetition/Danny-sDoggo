@@ -25,7 +25,7 @@ nav .logo {
   font-weight: bold;
 }
 
-/* Buttons with your original hover effect */
+/* Buttons with hover effects */
 nav a {
   display: inline-block;
   padding: 10px 18px;
@@ -44,18 +44,20 @@ nav a:hover {
   transform: translateY(-2px);
 }
 
-/* Centering container */
+/* Center container for the island, near top */
 .center-wrapper {
   flex: 1;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center;    /* horizontal center */
+  align-items: flex-start;    /* move to top */
+  padding-top: 30px;          /* space below navbar */
 }
 
 /* GLASS BLACK ISLAND */
 .island {
   padding: 40px;
   max-width: 600px;
+  width: 80%;
   text-align: center;
   border-radius: 20px;
 
