@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Danny's Doggo</title>
-  <link rel="stylesheet" href="style.css">
 
-  <!-- Futuristic Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Futuristic font (Orbitron) -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- NAVIGATION -->
+  <!-- NAVBAR -->
   <nav>
     <div class="left-group">
       <div class="logo">dannys doggo</div>
 
-      <!-- DROPDOWN ACTIVATOR -->
-      <label class="dropbtn" for="menu-toggle">Pictures ▼</label>
-      <input type="checkbox" id="menu-toggle">
+      <!-- label toggles the checkbox -->
+      <label class="dropbtn" for="menu-toggle" aria-haspopup="true" aria-controls="fullscreen-menu">Pictures ▼</label>
     </div>
   </nav>
 
-  <!-- FULL SCREEN DROPDOWN -->
-  <div class="fullscreen-dropdown">
-    <a href="#">Test</a>
+  <!-- hidden checkbox: placed BEFORE the menu so CSS sibling selector works -->
+  <input type="checkbox" id="menu-toggle" />
+
+  <!-- FULLSCREEN DROPDOWN (overlay) -->
+  <div id="fullscreen-menu" class="fullscreen-dropdown" role="menu" aria-hidden="true">
+    <a href="#" role="menuitem">Test</a>
   </div>
 
   <!-- GLASS ISLAND -->
