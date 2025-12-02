@@ -68,7 +68,7 @@ nav {
 }
 
 .dropbtn:hover {
-  background: transparent;
+  background: #000;
   transform: translateY(-2px);
 }
 
