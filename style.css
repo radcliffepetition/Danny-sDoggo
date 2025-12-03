@@ -152,7 +152,6 @@ nav {
   text-align: center;
   color: white;
   opacity: 0.8;
-  animation: fadeUp 1.8s infinite ease-in-out;
 }
 
 .scroll-hint p {
