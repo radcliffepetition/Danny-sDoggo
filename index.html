@@ -28,20 +28,35 @@
       <p>test</p>
   </div>
 
-  <!-- GLASS ISLAND -->
-  <div class="island">
-      <h2>Welcome to Camp Citizen!</h2>
-  </div>
 
-  <!-- SCRIPT (MUST be inside body) -->
+  <!-- SECTION 1: WELCOME -->
+  <section class="page-section section-welcome">
+      <h1>Welcome to the Club!</h1>
+  </section>
+
+  <!-- SECTION 2: ABOUT US -->
+  <section class="page-section section-about">
+      <h1>About Us</h1>
+      <p class="about-text">
+        This is where you can put a brief description about your group, club, or website.
+      </p>
+  </section>
+
+  <!-- SECTION 3: CREDITS -->
+  <section class="page-section section-credits">
+      <p>made by nick</p>
+  </section>
+
+
+  <!-- SCRIPT -->
   <script>
   function toggleDropdown() {
       const menu = document.getElementById("dropdown-menu");
 
       if (menu.classList.contains("open")) {
-          menu.classList.remove("open");  // slide up
+          menu.classList.remove("open");  
       } else {
-          menu.classList.add("open");     // slide down
+          menu.classList.add("open");     
       }
   }
   </script>
