@@ -5,29 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Take the Quiz</title>
 
-    <!-- Orbitron Futuristic Font -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Your Main CSS -->
     <link rel="stylesheet" href="style.css">
 
     <style>
-        /* ===== Quiz Page Styling ===== */
-        body {
-            font-family: "Orbitron", sans-serif;
-            color: white;
-        }
-
+        /* Quiz page container */
         .quiz-container {
             max-width: 700px;
             margin: 140px auto;
             text-align: center;
             padding: 20px;
-        }
-
-        h1 {
-            font-size: 2.2rem;
-            margin-bottom: 25px;
         }
 
         .start-btn, .answer-btn {
@@ -50,12 +37,7 @@
             transform: translateY(-3px);
         }
 
-        #final-score {
-            font-size: 2rem;
-            margin-top: 20px;
-        }
-
-        /* ===== Slide Animations ===== */
+        /* Slide animations */
         .slide-out-left {
             animation: outLeft 0.45s ease forwards;
         }
@@ -76,46 +58,8 @@
 
     </style>
 </head>
+
 <body>
 
-    <!-- NAVBAR -->
-    <nav>
-        <div class="left-group">
-            <div class="logo">Camp Citizen</div>
-        </div>
-    </nav>
-
-    <!-- QUIZ CONTAINER -->
-    <div class="quiz-container">
-
-        <!-- START SCREEN -->
-        <div id="start-screen">
-            <h1>Take the Quiz?</h1>
-            <button class="start-btn" onclick="startQuiz()">START</button>
-        </div>
-
-        <!-- QUESTION SCREEN -->
-        <div id="question-screen" style="display:none;">
-            <h1 id="question-text"></h1>
-            <div id="answers"></div>
-        </div>
-
-        <!-- FINAL SCREEN -->
-        <div id="end-screen" style="display:none;">
-            <h1>Quiz Completed!</h1>
-            <div id="final-score"></div>
-        </div>
-
-    </div>
-
-<script>
-    /* ===== QUESTIONS ===== */
-    const questions = [
-        {
-            text: "Question 1: Pick the correct answer:",
-            answers: ["Incorrect", "Incorrect", "CORRECT", "Incorrect"],
-            correct: 2
-        },
-        {
-            text: "Question 2: Choose wisely:",
-            answers: ["Incorrect", "CORRECT", "Incorrect", "Incorrect"],
+<nav>
+    <div class="left-gro
